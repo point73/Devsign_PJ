@@ -1,0 +1,36 @@
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* 밝은 배경색 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 링크 스타일 */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* 흰색 텍스트 */
+    background-color: #007BFF; /* 파란 버튼 */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* 부드러운 효과 */
+}
+
+/* 호버 효과 */
+a:hover {
+    background-color: #0056b3; /* 어두운 파란색 */
+    transform: scale(1.05); /* 살짝 확대 */
+}
+
+/* 활성화된 상태 */
+a:active {
+    background-color: #003f7f; /* 더 어두운 파란색 */
+    transform: scale(0.95); /* 살짝 축소 */
+}

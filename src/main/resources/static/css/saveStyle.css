@@ -1,0 +1,68 @@
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 밝고 차분한 배경색 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 폼 스타일 */
+form {
+    background-color: #ffffff; /* 흰색 배경 */
+    border: 1px solid #ddd; /* 얇은 경계선 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px; /* 적절한 너비 제한 */
+}
+
+/* 폼 내부 요소 */
+form input[type="text"],
+form input[type="password"] {
+    width: 100%; /* 입력 필드가 전체 너비를 차지 */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF; /* 파란색 버튼 */
+    color: white; /* 흰색 텍스트 */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* 어두운 파란색 */
+    transform: scale(1.05); /* 살짝 확대 */
+}
+
+form input[type="submit"]:active {
+    background-color: #003f7f; /* 더 어두운 파란색 */
+    transform: scale(0.95); /* 살짝 축소 */
+}
+
+/* 이메일 확인 결과 메시지 */
+#check-result {
+    margin: 5px 0 15px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007BFF; /* 기본 파란색 */
+}
+
+/* 에러 메시지 강조 */
+#check-result.error {
+    color: #FF4D4D; /* 빨간색 */
+}
